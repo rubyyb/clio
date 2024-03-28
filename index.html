@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.scss">
+
+    <!-- 섹션 제목 폰트 링크 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+    <!-- 스크립트 링크 -->
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+
+    <script>
+        $(function(){
+            //header_menu
+            let openBtn = document.getElementsByClassName('open_btn')[0];
+            let menu = document.getElementsByClassName('pc_gnb')[0];
+            let menuAfter = document.getElementsByClassName('header_menu')[0];
+
+            openBtn.addEventListener('click', () => {
+                // alert();
+                if(getComputedStyle(menuAfter).display === 'none') {
+                    menuAfter.style.display = 'block';
+                    menuAfter.classList.add('on'); 
+                } else {
+                    menuAfter.style.display = 'none';
+                    menuAfter.classList.remove('on'); 
+                }
+            })/* openBtn end */
+
+        })/* script end */
+    </script>
+
+</head>
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="inner">
+                <div class="header_main">
+                    <h1><a href="index.html">CLUB CLIO</a></h1>
+                    <button class="user">
+                        <figure><img src="img/icon_user.png" alt="로그인/마이페이지"/></figure>
+                        <figure><img src="img/icon_seacrh.png" alt="검색"/></figure>
+                        <figure><img src="img/icon-cart.png" alt="장바구니"/></figure>
+                    </button><!-- user end -->
+                </div><!-- header_main end -->
+
+                <button class="open_btn">
+                    <img src="img/icon_menu.png" alt="메뉴"/>
+                </button><!-- open_btn end -->
+
+                <div class="header_menu">
+                    <nav class="pc">
+                        <ul class="pc_gnb">
+                            <li class="depth01">
+                                <a href="#">CLIO</a>
+                                <ul class="depth02">
+                                    <li><a href="#">전체보기</a></li>
+                                    <li><a href="#">베이스</a></li>
+                                    <li><a href="#">립</a></li>
+                                    <li><a href="#">아이</a></li>
+                                    <li><a href="#">치크/컨투어링</a></li>
+                                    <li><a href="#">미용소품/잡화</a></li>
+                                    <li><a href="#">클렌징/선케어</a></li>
+                                </ul><!-- depth02 -->
+                            </li><!-- depth01 end -->
+                            <li class="depth01">
+                                <a href="#">Preipera</a>
+                                <ul class="depth02">
+                                    <li><a href="#">전체보기</a></li>
+                                    <li><a href="#">베이스</a></li>
+                                    <li><a href="#">립</a></li>
+                                    <li><a href="#">아이</a></li>
+                                    <li><a href="#">치크/컨투어링</a></li>
+                                    <li><a href="#">미용소품/잡화</a></li>
+                                    <li><a href="#">클렌징/선케어</a></li>
+                                </ul><!-- depth02 -->
+                            </li><!-- depth01 end -->
+                            <li class="depth01">
+                                <a href="#">Goodal</a>
+                                <ul class="depth02">
+                                    <li><a href="#">전체보기</a></li>
+                                    <li><a href="#">세럼/에센스</a></li>
+                                    <li><a href="#">토너/미스트</a></li>
+                                    <li><a href="#">로션/크림</a></li>
+                                    <li><a href="#">패드/마스크</a></li>
+                                    <li><a href="#">클렌징/선케어</a></li>
+                                </ul><!-- depth02 -->
+                            </li><!-- depth01 end -->
+                            <li class="depth01">
+                                <a href="#">Dermatory</a>
+                                <ul class="depth02">
+                                    <li><a href="#">전체보기</a></li>
+                                    <li><a href="#">세럼/에센스</a></li>
+                                    <li><a href="#">토너/미스트</a></li>
+                                    <li><a href="#">로션/크림</a></li>
+                                    <li><a href="#">패드/마스크</a></li>
+                                    <li><a href="#">클렌징/선케어</a></li>
+                                </ul><!-- depth02 -->
+                            </li><!-- depth01 end -->
+                            <li class="depth01">
+                                <a href="#">Healingbird</a>
+                                <ul class="depth02">
+                                    <li><a href="#">전체보기</a></li>
+                                    <li><a href="#">헤어케어</a></li>
+                                </ul><!-- depth02 -->
+                            </li><!-- depth01 end -->
+                            <li class="depth01">
+                                <a href="#">Sim;plain</a>
+                                <ul class="depth02">
+                                    <li><a href="#">전체보기</a></li>
+                                    <li><a href="#">립</a></li>
+                                    <li><a href="#">아이</a></li>
+                                    <li><a href="#">미용소품/잡화</a></li>
+                                </ul><!-- depth02 -->
+                            </li><!-- depth01 end -->
+                            <li class="depth01">
+                                <a href="#">TYPE No.</a>
+                                <ul class="depth02">
+                                    <li><a href="#">전체보기</a></li>
+                                    <li><a href="#">바디케어</a></li>
+                                    <li><a href="#">홈 프래그런스</a></li>
+                                </ul><!-- depth02 -->
+                            </li><!-- depth01 end -->
+                            <li class="depth01">
+                                <a href="#">ALPHA.B</a>
+                                <ul class="depth02">
+                                    <li><a href="#">전체보기</a></li>
+                                    <li><a href="#">세럼/에센스</a></li>
+                                    <li><a href="#">토너/미스트</a></li>
+                                    <li><a href="#">클렌징/선케어</a></li>
+                                </ul><!-- depth02 -->
+                            </li><!-- depth01 end -->
+                            <li class="depth01">
+                                <a href="#">TRUE RX</a>
+                                <ul class="depth02">
+                                    <li><a href="#">전체보기</a></li>
+                                    <li><a href="#">이너뷰티</a></li>
+                                </ul><!-- depth02 -->
+                            </li><!-- depth01 end -->
+                        </ul><!-- pc_gnb end -->
+                    </nav><!-- pc -->
+                </div><!-- header_menu -->
+            </div><!-- inner end -->
+        </header><!-- header end -->
+
+        <main class="main">
+            <section class="main_visual">
+                <div class="swiper main_visual_slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="img/클리오_메인비주얼_1.jpg" alt="메인">
+                            </figure>
+                        </div><!-- swiper-slide -->
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="img/클리오_메인비주얼_2.jpg" alt="메인">
+                            </figure>
+                        </div><!-- swiper-slide -->
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="img/클리오_메인비주얼_3.jpg" alt="메인">
+                            </figure>
+                        </div><!-- swiper-slide -->
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="img/클리오_메인비주얼_4.jpg" alt="메인">
+                            </figure>
+                        </div><!-- swiper-slide -->
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="img/클리오_메인비주얼_5.jpg" alt="메인">
+                            </figure>
+                        </div><!-- swiper-slide -->
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="img/클리오_메인비주얼_6.jpg" alt="메인">
+                            </figure>
+                        </div><!-- swiper-slide -->
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="img/클리오_메인비주얼_7.jpg" alt="메인">
+                            </figure>
+                        </div><!-- swiper-slide -->
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="img/클리오_메인비주얼_8.jpg" alt="메인">
+                            </figure>
+                        </div><!-- swiper-slide -->
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="img/클리오_메인비주얼_9.jpg" alt="메인">
+                            </figure>
+                        </div><!-- swiper-slide -->
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="img/클리오_메인비주얼_10.jpg" alt="메인">
+                            </figure>
+                        </div><!-- swiper-slide -->
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </section><!-- main_visual -->
+
+            <section class="service">
+                <div class="inner">
+                    <div class="service_header">
+                        <p>미리보는 클리오</p>
+                        <h2>클리오에서 만나는 다채로운 서비스</h2>
+                    </div><!-- service_header end -->
+
+                    <div class="service_list">
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/멤버스온리.jpg" alt="멤버스 온리">
+                                </figure>
+                                <div class="text">
+                                    <h3><strong>멤버스온리</strong></h3>
+                                    <p>미니어처&리필 상품에 단독구성까지!
+                                        오직 멤버스에 가입하신분들만!
+                                        다양한제품을 득템할 수 있는 기회
+                                        만나보세요!
+                                    </p>
+                                </div>
+                            </a>
+                        </div><!-- item -->
+
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/체험단.gif" alt="체험단">
+                                </figure>
+                                <div class="text">
+                                    <h3><strong>뷰티테스터</strong></h3>
+                                    <p>새로나오는 제품들을 제일먼저 체험 후
+                                        후기만 남겨주시면 됩니다!
+                                        자세한 사항을 접속하여 봐주세요!
+                                    </p>
+                                </div>
+                            </a>
+                        </div><!-- item -->
+
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/선물하기_이미지.gif" alt="선물하기">
+                                </figure>
+                                <div class="text">
+                                    <h3><strong>선물하기</strong></h3>
+                                    <p>주소화 연락처를 몰라도 예쁜 선물을
+                                        메세지 카드와 함께 쇼핑백에 담아
+                                        선물해 보세요!
+                                    </p>
+                                </div>
+                            </a>
+                        </div><!-- item -->
+                    </div><!-- list end -->
+                </div><!-- inner end -->
+            </section><!-- cont01 end -->
+
+            <section class="text_slide">
+                <p>Meet Club Clio's best and new products Meet Club Clio's best and new products Meet Club Clio's best and new products</p>
+            </section><!-- text_slide -->
+
+            <sectipn class="best">
+                <div class="inner">
+                    <div class="best_header">
+                        <h2>BEST</h2>
+                        <p>더보기</p>
+                    </div><!-- best_header end -->
+
+                    <div class="best_list">
+                        <div class="swiper best_item_slide">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <figure>
+                                            <img src="img/best_1.gif" alt="심플레인 아이팔레트">
+                                        </figure>
+                                        <div class="text">
+                                            <p>심플레인</p>
+                                            <h4>[NEW 컬러]심플레인 아이팔레트</h4>
+                                            <div>
+                                                <h5>40%</h5>
+                                                <p>14,500원</p>
+                                            </div>
+                                        </div><!-- text end -->
+                                    </a>
+                                </div><!-- swiper-slide end -->
+
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <figure>
+                                            <img src="img/best_2.gif" alt="킬커버 더뉴쿠션 기획"/>
+                                        </figure>
+                                        <div class="text">
+                                            <p>클리오</p>
+                                            <h4>[후로페샤날 청과]킬커버 더뉴쿠션 기획 [본품+리필+마켓백+키링]</h4>
+                                            <div>
+                                                <h5>25%</h5>
+                                                <p>27,000원</p>
+                                            </div>
+                                        </div><!-- text end -->
+                                    </a>
+                                </div><!-- swiper-slide end -->
+
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <figure>
+                                            <img src="img/best_3.gif" alt="잉크 글래스팅 리글로스"/>
+                                        </figure>
+                                        <div class="text">
+                                            <p>페리페라</p>
+                                            <h4>잉크 글래스팅 립글로스</h4>
+                                            <div>
+                                                <h5>22%</h5>
+                                                <p>9,300원</p>
+                                            </div>
+                                        </div><!-- text end -->
+                                    </a>
+                                </div><!-- swiper-slide end -->
+
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <figure>
+                                            <img src="img/best_4.gif" alt="심플레인 슬림 마스카라"/>
+                                        </figure>
+                                        <div class="text">
+                                            <p>심플레인</p>
+                                            <h4>[1+1]심플레인 슬림 마스카라</h4>
+                                            <div>
+                                                <h5>50%</h5>
+                                                <p>12,000원</p>
+                                            </div>
+                                        </div><!-- text end -->
+                                    </a>
+                                </div><!-- swiper-slide end -->
+
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <figure>
+                                            <img src="img/best_5.gif" alt="샤프 쏘 심플 워터프루프 펜슬 라이너"/>
+                                        </figure>
+                                        <div class="text">
+                                            <p>클리오</p>
+                                            <h4>[1+1]샤프 쏘 심플 워터프루프 펜슬 라이너(24AD)</h4>
+                                            <div>
+                                                <h5>30%</h5>
+                                                <p>15,400원</p>
+                                            </div>
+                                        </div><!-- text end -->
+                                    </a>
+                                </div><!-- swiper-slide end -->
+                                
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <figure>
+                                            <img src="img/best_6.gif" alt="쉬폰 블러 틴트"/>
+                                        </figure>
+                                        <div class="text">
+                                            <p>클리오</p>
+                                            <h4>[후로페샤날 청과]쉬폰 블러 틴트</h4>
+                                            <div>
+                                                <h5>30%</h5>
+                                                <p>12,600원</p>
+                                            </div>
+                                        </div><!-- text end -->
+                                    </a>
+                                </div><!-- swiper-slide end -->
+
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <figure>
+                                            <img src="img/best_7.gif" alt="듀이 볼륨 틴트"/>
+                                        </figure>
+                                        <div class="text">
+                                            <p>심플레인</p>
+                                            <h4>[NEW/1+1]듀이 볼륨 틴트</h4>
+                                            <div>
+                                                <h5>35%</h5>
+                                                <p>15,500원</p>
+                                            </div>
+                                        </div><!-- text end -->
+                                    </a>
+                                </div><!-- swiper-slide end -->
+
+                            </div><!-- swiper-wrapper end -->
+                            <div class="swiper-pagination"></div>
+                        </div><!-- best_item_slide end -->
+                    </div><!-- best_list -->
+                </div><!-- inner end -->
+            </sectipn><!-- best end -->
+        </main><!-- main end -->
+    </div><!-- wrap -->
+
+    <script>
+        //메인비주얼 슬라이드
+        var swiper = new Swiper(".main_visual_slide", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        var swiper = new Swiper(".best_item_slide", {
+            slidesPerView: 3,
+            spaceBetween: 24,
+            pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+            },
+        });
+    </script>
+</body>
+</html>

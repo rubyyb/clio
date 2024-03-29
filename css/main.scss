@@ -325,7 +325,7 @@ body {
     }
 
     .new {
-        padding-top: 10rem;
+        padding: 10rem 0;
         h2 {
             font-family: var(--font-title-en);
             font-size: 4rem;
@@ -440,17 +440,52 @@ body {
         }/* new_list */
     }/* new */
 
+    .text_slide_2 {
+        // width: 100%;
+        background-color: rgb(248, 147, 180);
+        color: aliceblue;
+        padding: 20px 0;
+        font-size: 40px;
+        overflow: hidden;
+        p {
+            white-space: nowrap;
+            animation: textslide02 10s infinite linear;
+        }
+        @keyframes textslide02 {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(0%);
+            }
+        }
+    }/* text_slide_2 */
+
     .category {
-        padding-top: 10rem;
+        padding: 10rem 0;
         .inner {
             display: flex;
             justify-content: space-between;
             .category_tilte {
                 width: 48%;
+                height: 37.1vw;
                 h2 {
                     font-size: 4rem;
                     font-family: var(--font-title-kr);
+                    font-weight: bold;
                     margin-bottom: 3rem;
+                    position: relative;
+                    &::before{
+                        content: '';
+                        width: 187px;
+                        height: 15px;
+                        background-color: rgba(255, 192, 203);
+                        position: absolute;
+                        bottom: 5px;
+                        left: 0;
+                        transform: skew(-47deg);
+                        z-index: -1;
+                    }
                 }
                 .category_list {
                     ul {
@@ -470,25 +505,118 @@ body {
                             }
                         }
                     }
-                }/* category_list */
+                }/* category_list */               
+            }/* category_tilte */
 
-                .category_item {
-                    .item_1 {
-                        width: 48%;
-                        .small_item {
-                            figure {
-                                width: 6.8vw;
-                                height: 6.8vw;
-                                img {
-                                    width: 100%;
-                                    height: 100%;
-                                    object-fit: cover;
-                                }
+            .category_item {
+                width: 48%;
+                .item {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    display: none;
+                    padding-top: 70px;
+                    &.on {
+                        display: flex;
+                    }
+                    .small_item {
+                        display: flex;
+                        gap: 24px;
+                        figure {
+                            width: 7.8vw;
+                            height: 5.8vw;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
                             }
                         }
-                    }
-                }                
-            }/* category_tilte */
+                        .category_text_box {
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            .category_text {
+                                display: flex;
+                                justify-content: space-between;
+                                flex-direction: column;
+                                p {
+                                    font-size: 1.2rem;
+                                    color: #7B7474;
+                                }
+                                h4 {
+                                    font-size: 1.6rem;
+                                    color: #333;
+                                    font-weight: bold;
+                                    margin-top: 2.5rem;
+                                }
+                                .category_pay {
+                                    display: flex;
+                                    gap: 1rem;
+                                    h5 {
+                                        color: red;
+                                        font-size: 1.6rem;
+                                        font-weight: bold;
+                                    }
+                                    p {
+                                        font-size: 1.6rem;
+                                        font-weight: bold;
+                                        color: #333;
+                                    }
+                                }/* new_pay */
+                            }/* new_text */
+                            .category_icon {
+                                button {
+                                    width: 3.5rem;
+                                    img {
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }/* category_text_box */
+                    }/* small_item */
+                }/* item */
+            } 
         }/* inner */
     }/* category */
+
+    .instargram {
+        padding: 10rem 0;
+        h2 {
+            font-size: 4rem;
+            font-family: var(--font-title-en);
+            display: flex;
+            justify-content: center;
+            margin-bottom: 8rem;
+        }
+        .instargram_item {
+            position: relative;
+            .swiper {
+                position: static;
+                .swiper-slide {
+                    figure {
+                        width: 15.81vw;
+                        height: 15.81vw;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }/* swiper-slide */
+            }/* swiper */
+        }/* instargram_item */
+    }/* instargram */
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+        top: auto;
+        bottom: -40px;
+    }
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        width: 15px;
+        height: 15px;
+    }
+    .swiper-pagination-bullet-active {
+
+        background: url(../img/icon_립스틱.png) center center / 100% no-repeat;
+    }
+
 }/* main */

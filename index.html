@@ -48,7 +48,26 @@
                 })
             }
 
-        
+            //category_tab_menu
+            let categoryList = document.querySelector('.category_list');
+            let categoryMenu = document.querySelectorAll('.category_list li');
+            let categoryItem =document.querySelectorAll('.category_item .item');
+
+            for(let i = 0; i < categoryMenu.length; i++) {
+                categoryMenu[i].addEventListener('click', () => {
+                    // alert();
+                    categoryMenu.forEach((menu) => {
+                        menu.classList.remove('on');
+                    })
+
+                    categoryItem.forEach((item) => {
+                        item.classList.remove('on');
+                    })
+
+                    categoryMenu[i].classList.add('on');
+                    categoryItem[i].classList.add('on');
+                })
+            }
         })/* script end */
     </script>
 
@@ -609,6 +628,10 @@
                 </div><!-- inner end -->
             </section><!-- new end -->
 
+            <section class="text_slide_2">
+                <p>Meet Club Clio's best and new products Meet Club Clio's best and new products Meet Club Clio's best and new products</p>
+            </section><!-- text_slide -->
+
             <section class="category">
                 <div class="inner">
                     <div class="category_tilte">
@@ -633,1483 +656,1574 @@
                     </div><!-- category_title -->
 
                     <div class="category_item">
-                        <div class="item_1">
+                        <div class="item on">
                             <div class="small_item">
                                 <figure>
                                     <img  src="img/categoey_1-1.gif" alt="킬커버 더뉴쿠션 기획">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>클리오</p>
                                             <h4>킬커버 더뉴쿠션 기획[본품+리필+마켓백+키링]</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>25%</h5>
                                             <p>27,000원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!--"category_pay -->
+                                    </div><!--"category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!--"category_icon -->
+                                </div><!--"category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_1-2.gif" alt="킬커버 스킨픽서쿠션 기획세트">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>클리오</p>
                                             <h4>킬커버 스킨픽서쿠션 기획세트[본품+리필구성]</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>25%</h5>
                                             <p>27,000원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!--"category_pay -->
+                                    </div><!--"category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!--"category_icon -->
+                                </div><!--"category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_1-3.gif" alt="[한정기획/스페션백증정]30주년 기념세트">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>클리오</p>
                                             <h4>[한정기획/스페션백증정]30주년 기념세트[쿠션+팔레트+아이라이너+마스카라]</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>59%</h5>
                                             <p>39,900원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!--"category_pay -->
+                                    </div><!--"category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!--"category_icon -->
+                                </div><!--"category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_1-4.gif" alt="킬커버 파운웨어 더뉴쿠션 기획세트">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>클리오</p>
                                             <h4>킬커버 파운웨어 더뉴쿠션 기획세트[본품+리필]</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>25%</h5>
                                             <p>27,000원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!--"category_pay -->
+                                    </div><!--"category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!--"category_icon -->
+                                </div><!--"category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_1-5.gif" alt="킬커버 하이글로우 쿠션 기획세트">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>클리오</p>
                                             <h4>킬커버 하이글로우 쿠션 기획세트[본품+리필]</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>25%</h5>
                                             <p>27,000원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!--"category_pay -->
+                                    </div><!--"category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!--"category_icon -->
+                                </div><!--"category_text_box -->
                             </div><!-- small_item -->
-                        </div><!-- item_1 -->
+                        </div><!-- item -->
 
-                        <div class="item_2">
+                        <div class="item">
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_2-1.gif" alt="잉크 글래스팅 립글로스">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>페리페라</p>
                                             <h4>잉크 글래스팅 립글로스</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>22%</h5>
                                             <p>9,300원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!--"category_pay -->
+                                    </div><!--"category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!--"category_icon -->
+                                </div><!--"category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_2-2.gif" alt="[후로페샤날 청과]쉬폰 블러 틴트">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>클리오</p>
                                             <h4>[후로페샤날 청과]쉬폰 블러 틴트</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>30%</h5>
                                             <p>12,600원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!--"category_pay -->
+                                    </div><!--"category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!--"category_icon -->
+                                </div><!--"category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_2-3.gif" alt="[NEW]듀이 볼룸 틴트">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>심플레인</p>
                                             <h4>[NEW]듀이 볼룸 틴트</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>34%</h5>
                                             <p>7,900원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!--"category_pay -->
+                                    </div><!--"category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!--"category_icon -->
+                                </div><!--"category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_2-4.gif" alt="[NEW/1+1]듀이 볼륨 틴트">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>심플레인</p>
                                             <h4>[NEW/1+1]듀이 볼륨 틴트</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>35%</h5>
                                             <p>15,000원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!--"category_pay -->
+                                    </div><!--"category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!--"category_icon -->
+                                </div><!--"category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_2-5.gif" alt="벨벳 립펜슬 기회">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>클리오</p>
                                             <h4>벨벳 립펜슬 기회[본품+샤프너 구성]</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>32%</h5>
                                             <p>9,500원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!--"category_pay -->
+                                    </div><!--"category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!--"category_icon -->
+                                </div><!--"category_text_box -->
                             </div><!-- small_item -->
-                        </div><!-- item_2 -->
+                        </div><!-- item -->
 
-                        <div class="item_3">
+                        <div class="item">
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_3-1.gif" alt="청귤 비타C 잡티케어 세럼 더블기획">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>구달</p>
                                             <h4>청귤 비타C 잡티케어 세럼 더블기획(세럼2개+크림2개+아이크림1개)</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>15%</h5>
                                             <p>41,650원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!--"category_pay -->
+                                    </div><!--"category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!--"category_icon -->
+                                </div><!--"category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_3-2.gif" alt="청귤 비타C 잡티케어 세럼 더블기획">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>구달</p>
                                             <h4>청귤 비타C 잡티케어 세럼 더블기획(세럼+패드+아이패치 5ea)</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>36%</h5>
                                             <p>29,900원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!--"category_pay -->
+                                    </div><!--"category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!--"category_icon -->
+                                </div><!--"category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_3-3.gif" alt="타임 리턴 엑소 콜라겐 앰플">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>알파비</p>
                                             <h4>타임 리턴 엑소 콜라겐 앰플</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>70%</h5>
                                             <p>13,500원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!--"category_pay -->
+                                    </div><!--"category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!--"category_icon -->
+                                </div><!--"category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_3-4.gif" alt="청귤 비타C 잡티케어 세럼 한정기획">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>구달</p>
                                             <h4>청귤 비타C 잡티케어 세럼 한정기획(세럼+크림)</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>10%</h5>
                                             <p>27,000원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!--"category_pay -->
+                                    </div><!--"category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!--"category_icon -->
+                                </div><!--"category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_3-5.gif" alt="[회원전용 상품]청귤 비타C 잡치케어 세험">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>구달</p>
                                             <h4>[회원전용 상품]청귤 비타C 잡치케어 세럼 20ml</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>25%</h5>
                                             <p>15,000원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!--"category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
-                        </div><!-- item_3 -->
+                        </div><!-- item -->
 
-                        <div class="item_4">
+                        <div class="item">
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_4-1.gif" alt="프리즘 하이라이터">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>클리오</p>
                                             <h4>프리즘 하이라이터[증정]전용 브러쉬</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>31%</h5>
                                             <p>16,500원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_4-2.gif" alt="쉐이드 앤 쉐딩[본품+브러쉬 구성]">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>클리오</p>
                                             <h4>쉐이드 앤 쉐딩[본품+브러쉬 구성]</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>40%</h5>
                                             <p>11,900원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_4-2.gif" alt="[NEW/나잇페라프렌즈]맑게 물든 커스텀 치크">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>페리페라</p>
                                             <h4>[NEW/나잇페라프렌즈]맑게 물든 커스텀 치크</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>20%</h5>
                                             <p>8,000원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_4-4.gif" alt="[1+1]에어 블러휩 블러쉬">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>클리오</p>
                                             <h4>[1+1]에어 블러휩 블러쉬 [증정]전용 브러쉬</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>41%</h5>
                                             <p>22,500원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_4-5.gif" alt="[1+1]브이 쉐딩 블랜딩 스틱">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>페리페라</p>
                                             <h4>[1+1]브이 쉐딩 블랜딩 스틱</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>50%</h5>
                                             <p>12,000원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
-                        </div><!-- item_4 -->
+                        </div><!-- item -->
 
-                        <div class="item_5">
+                        <div class="item">
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_5-1.gif" alt="비건라이스 밀크 토너+크림 기획세트">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>구달</p>
                                             <h4>[NEW]비건라이스 밀크 토너+크림 기획세트(토너+크림+팩크렌저)</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>30%</h5>
                                             <p>29,400원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_5-2.gif" alt="맑은 어성초 진정 토너">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>구달</p>
                                             <h4>맑은 어성초 진정 토너</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>20%</h5>
                                             <p>16,000원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_5-3.gif" alt="청귤 비타C 세럼 미스트">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>구달</p>
                                             <h4>청귤 비타C 세럼 미스트</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>30%</h5>
                                             <p>14,900원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_5-4.gif" alt="[1+1 기획]맑은 어성초 진정 토너 리필에디션">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>구달</p>
                                             <h4>[1+1 기획]맑은 어성초 진정 토너 리필에디션(본품+리필)</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <p>30,000원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
-                        </div><!-- item_5 -->
+                        </div><!-- item -->
 
-                        <div class="item_6">
+                        <div class="item">
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_6-1.gif" alt="청귤 비타C 잡티케어 세럼 더블기획">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>구달</p>
                                             <h4>청귤 비타C 잡티케어 세럼 더블기획(세럼2개+크림2개+아이크림)</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>15%</h5>
                                             <p>41,650원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_6-2.gif" alt="청귤비타C 잡티케어 세럼 한정기획">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>구달</p>
                                             <h4>청귤비타C 잡티케어 세럼 한정기획(세럼+크림)</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>10%</h5>
                                             <p>27,600원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_6-3.gif" alt="비건라이스 밀크 토너+크림 기획세트">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>구달</p>
                                             <h4>[NEW]비건라이스 밀크 토너+크림 기획세트(토너+크림+팩클렌저)</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>30%</h5>
                                             <p>29,400원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_6-4.gif" alt="레티날 스피큘 링클 앤 넥크림">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>더마토리</p>
                                             <h4>레티날 스피큘 링클 앤 넥크림</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>32%</h5>
                                             <p>25,840원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_6-5.gif" alt="피오니 펩타이드 주름 흔적 크림">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>클리오</p>
                                             <h4>[NEW]피오니 펩타이드 주름 흔적 크림</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>20%</h5>
                                             <p>30,400원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
-                        </div><!-- item_6 -->
+                        </div><!-- item -->
 
-                        <div class="item_7">
+                        <div class="item">
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_7-1.gif" alt="프로 비타 에이 레티날덤 밴드마스크">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>더마토리</p>
                                             <h4>[총 10매입]프로 비타 에이 레티날덤 밴드마스크</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>51%</h5>
                                             <p>19,500원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_7-2.gif" alt="청귤 비타C 잡티케어 세럼 더블기획">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="ncategory_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>구달</p>
                                             <h4>청귤 비타C 잡티케어 세럼 더블기획(70매+70매)</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>25%</h5>
                                             <p>28,500원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_7-3.gif" alt="하이포알러제닉 시카 거즈패드 리필 기획세트">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>더마토리</p>
                                             <h4>하이포알러제닉 시카 거즈패드 리필 기획세트(80매+80매)</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>30%</h5>
                                             <p>27,300원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_7-4.gif" alt="프로 아쿠아 히알덤 밴드 마스크">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>더마토리</p>
                                             <h4>[총 10매]프로 아쿠아 히알덤 밴드 마스크</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>51%</h5>
                                             <p>19,500원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_7-5.gif" alt="[5+5]프로 앰플 마스크">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>더마토리</p>
                                             <h4>[5+5]프로 앰플 마스크</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>52%</h5>
                                             <p>9,500원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!--categoryw_text_box -->
                             </div><!-- small_item -->
-                        </div><!-- item_7 -->
+                        </div><!-- item -->
 
-                        <div class="item_8">
+                        <div class="item">
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_8-1.gif" alt="맑은 어성초 진정 수분 선크림 1+1 기획">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>구달</p>
                                             <h4>[NEW]맑은 어성초 진정 수분 선크림 1+1 기획</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>16%</h5>
                                             <p>16,900원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_8-2.gif" alt="에어글래스 빙하수 선쿠션 기획세트">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>클리오</p>
                                             <h4>에어글래스 빙하수 선쿠션 기획세트(본품+리필)</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>76%</h5>
                                             <p>13,900원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_8-3.gif" alt="맑은 어성초 진정 쿨링 선스틱 1+1 기획">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>구달</p>
                                             <h4>맑은 어성초 진정 쿨링 선스틱 1+1 기획</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>10%</h5>
                                             <p>19,800원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_8-4.gif" alt="맑은 어성초 진정 무기자차 선크림 1+1 기획">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>구달</p>
                                             <h4>맑은 어성초 진정 무기자차 선크림 1+1 기획</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>14%</h5>
                                             <p>17,100원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_8-5.gif" alt="프로 트러블 모공 클렌징 워터 패드 100매">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>더마토리</p>
                                             <h4>[1+1]프로 트러블 모공 클렌징 워터 패드 100매</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>40%</h5>
                                             <p>26,400원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
-                        </div><!-- item_8 -->
+                        </div><!-- item -->
 
-                        <div class="item_9">
+                        <div class="item">
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_9-1.gif" alt="비포 샴푸 퍼스트 헤어팩 기획세트">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>힐링버드</p>
                                             <h4>비포 샴푸 퍼스트 헤어팩 기획세트(본품+리필)</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>35%</h5>
                                             <p>19,400원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_9-2.gif" alt="리바이브 노워시 트리트먼트 데미지리페어 기획">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>힐링버드</p>
                                             <h4>[NEW]리바이브 노워시 트리트먼트 데미지리페어 기획(본품+트리트먼트)</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>35%</h5>
                                             <p>17,500원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_9-3.gif" alt="울트라 프로틴 인텐시브 앰플팩 샴푸">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>힐링버드</p>
                                             <h4>울트라 프로틴 인텐시브 앰플팩 샴푸</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>35%</h5>
                                             <p>17,500원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_9-4.gif" alt="울트라 프로틴 헤어오일 리치">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>힐링버드</p>
                                             <h4>울트라 프로틴 헤어오일 리치</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>30%</h5>
                                             <p>19,600원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_9-5.gif" alt="리바이브 노워시 트리트먼트 딥모이스터 기획">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>힐링버드</p>
                                             <h4>[NEW]리바이브 노워시 트리트먼트 딥모이스터 기획</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>35%</h5>
                                             <p>17,500원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
-                        </div><!-- item_9 -->
+                        </div><!-- item -->
 
-                        <div class="item_10">
+                        <div class="item">
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_010-1.gif" alt="트레블 세트">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>타입넘버</p>
                                             <h4>트레블 세트[바디워시+핸드워시+핸드크림+파우치구성]</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>72%</h5>
                                             <p>9,900원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_010-2.gif" alt="TYPE No. 핸드크림">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>타입넘버</p>
                                             <h4>TYPE No.핸드크림</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>72%</h5>
                                             <p>9,900원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_010-3.gif" alt="TYPE No.바디 미스트(3종 중 택1)">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>타입넘버</p>
                                             <h4>TYPE No.바디 미스트(3종 중 택1)</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>20%</h5>
                                             <p>20,000원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_010-4.gif" alt="TYPE No.60슬로우다운 핸드크림">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>타입넘버</p>
                                             <h4>TYPE No.60슬로우다운 핸드크림</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>10%</h5>
                                             <p>10,800원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_010-5.gif" alt="TYPE No.핸드크림+핸드워시">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>타입넘버</p>
                                             <h4>[단독SET]TYPE No.핸드크림+핸드워시</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>30%</h5>
                                             <p>29,500원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
-                        </div><!-- item_10 -->
+                        </div><!-- item -->
 
-                        <div class="item_11">
+                        <div class="item">
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_011-1.gif" alt="TYPE No.11 윈드스테이 스톤 오브제 디퓨저">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>타입넘버</p>
                                             <h4>TYPE No.11 윈드스테이 스톤 오브제 디퓨저</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>23%</h5>
                                             <p>29,900원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_011-2.gif" alt="TYPE No. 무드 퍼퓸 샤쉐 3종세트">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>타입넘버</p>
                                             <h4>TYPE No. 무드 퍼퓸 샤쉐 3종세트</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>35%</h5>
                                             <p>13,700원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_011-3.gif" alt="TYPE No.11 윈드스테이 스톤 오브제 디퓨저 리필">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>타입넘버</p>
                                             <h4>TYPE No.11 윈드스테이 스톤 오브제 디퓨저 리필</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>30%</h5>
                                             <p>10,500원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_011-4.gif" alt="TYPE No. 무드 퍼퓸 샤쉐(3종 중 택1)">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>더마토리</p>
                                             <h4>TYPE No. 무드 퍼퓸 샤쉐(3종 중 택1)</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>7%</h5>
                                             <p>6,500원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
-                        </div><!-- item_11 -->
+                        </div><!-- item -->
 
-                        <div class="item_12">
+                        <div class="item">
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_012-1.gif" alt="심플레인 아이팔레트+브러쉬 증정">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>심플레인</p>
                                             <h4>[SET/NEW컬러]심플레인 아이팔레트+브러쉬 증정</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>49%</h5>
                                             <p>24,000원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_012-2.gif" alt="심플레인 브러쉬 세트[브러쉬 4ea+파우치 구성]">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>심플레인</p>
                                             <h4>심플레인 브러쉬 세트[브러쉬 4ea+파우치 구성]</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>35%</h5>
                                             <p>14,900원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_012-3.gif" alt="[회원전용 상품]킬커버 쿠션 미니+테리 큐브파우치">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>클리오</p>
                                             <h4>[회원전용 상품]킬커버 쿠션 미니+테리 큐브파우치</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>14%</h5>
                                             <p>23,300원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_012-4.gif" alt="하이드로 메이크업 스폰지(대)">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>클리오</p>
                                             <h4>하이드로 메이크업 스폰지(대)</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>30%</h5>
                                             <p>6,300원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_012-5.gif" alt="심플레인 래쉬 컬러[뷰러+리필3개+파우치]">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>심플레인</p>
                                             <h4>심플레인 래쉬 컬러[뷰러+리필3개+파우치]</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>35%</h5>
                                             <p>7,800원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
-                        </div><!-- item_12 -->
+                        </div><!-- item -->
 
-                        <div class="item_13">
+                        <div class="item">
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_013-1.gif" alt="리치화이트 글루타치온 1box">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>투루알엑스</p>
                                             <h4>리치화이트 글루타치온 1box</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>24%</h5>
                                             <p>25,000원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_013-2.gif" alt="리치콜라겐 1box">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>투루알엑스</p>
                                             <h4>리치콜라겐 1box</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>76%</h5>
                                             <p>13,900원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_013-3.gif" alt="리치 비타민D 1box">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>투루알엑스</p>
                                             <h4>리치 비타민D 1box</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>14%</h5>
                                             <p>19,000원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_013-4.gif" alt="">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>투루알엑스</p>
                                             <h4>리치 프로틴 1box</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>15%</h5>
                                             <p>29,800원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
 
                             <div class="small_item">
                                 <figure>
                                     <img src="img/categoey_013-5.gif" alt="그날 편한 보라지유 1box">
                                 </figure>
-                                <div class="new_text_box">
-                                    <div class="new_text">
+                                <div class="category_text_box">
+                                    <div class="category_text">
                                         <div class="text_title">
                                             <p>투루알엑스</p>
                                             <h4>그날 편한 보라지유 1box</h4>
                                         </div><!-- text_title -->
-                                        <div class="new_pay">
+                                        <div class="category_pay">
                                             <h5>5%</h5>
                                             <p>38,000원</p>
-                                        </div><!-- new_pay -->
-                                    </div><!-- new_text -->
-                                    <div class="new_icon">
+                                        </div><!-- category_pay -->
+                                    </div><!-- category_text -->
+                                    <div class="category_icon">
                                         <button><a href="#">
                                             <img src="img/icon_Heart.png" alt="마음에들어요">
                                         </a></button>
-                                    </div><!-- new_icon -->
-                                </div><!-- new_text_box -->
+                                    </div><!-- category_icon -->
+                                </div><!-- category_text_box -->
                             </div><!-- small_item -->
-                        </div><!-- item_13 -->
+                        </div><!-- item -->
                     </div><!-- category_item -->
                 </div><!-- inner end -->
             </section><!-- category end -->
+
+            <section class="instargram">
+                <h2>INSTARGRAM</h2>
+
+                <div class="instargram_item">
+                    <div class="swiper instargram_item_slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/instargram_1.jpg" alt="인스타그램사진">
+                                    </figure>
+                                </a>
+                            </div><!-- swiper-slide -->
+
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/instargram_2.jpg" alt="인스타그램사진">
+                                    </figure>
+                                </a>
+                            </div><!-- swiper-slide -->
+
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/instargram_3.jpg" alt="인스타그램사진">
+                                    </figure>
+                                </a>
+                            </div><!-- swiper-slide -->
+
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/instargram_4.jpg" alt="인스타그램사진">
+                                    </figure>
+                                </a>
+                            </div><!-- swiper-slide -->
+
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/instargram_5.jpg" alt="인스타그램사진">
+                                    </figure>
+                                </a>
+                            </div><!-- swiper-slide -->
+
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/instargram_6.jpg" alt="인스타그램사진">
+                                    </figure>
+                                </a>
+                            </div><!-- swiper-slide -->
+
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/instargram_7.jpg" alt="인스타그램사진">
+                                    </figure>
+                                </a>
+                            </div><!-- swiper-slide -->
+
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/instargram_8.jpg" alt="인스타그램사진">
+                                    </figure>
+                                </a>
+                            </div><!-- swiper-slide -->
+
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/instargram_9.jpg" alt="인스타그램사진">
+                                    </figure>
+                                </a>
+                            </div><!-- swiper-slide -->
+
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/instargram_010.jpg" alt="인스타그램사진">
+                                    </figure>
+                                </a>
+                            </div><!-- swiper-slide -->
+                        </div><!-- swiper-wrapper -->
+                        <div class="swiper-pagination"></div>
+                    </div><!-- instargram_item_slide -->
+                </div><!-- instargram_item end -->
                 
+            </section><!-- instargram end -->
         </main><!-- main end -->
     </div><!-- wrap -->
 
@@ -2142,6 +2256,15 @@
                 el: ".swiper-scrollbar",
             },
             mousewheel: true,
+        });
+
+        var swiper = new Swiper(".instargram_item_slide", {
+            slidesPerView: 5.5,
+            spaceBetween: 24,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
         });
     </script>
 </body>

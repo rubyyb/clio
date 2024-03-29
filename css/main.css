@@ -136,7 +136,9 @@ body {
   /* service end */
   /* best */
   /* new */
+  /* text_slide_2 */
   /* category */
+  /* instargram */
 }
 .main .main_visual_slide .swiper-slide {
   width: 100%;
@@ -336,7 +338,7 @@ body {
   background-color: #333;
 }
 .main .new {
-  padding-top: 10rem;
+  padding: 10rem 0;
   /* new_list */
 }
 .main .new h2 {
@@ -456,8 +458,27 @@ body {
 .main .new .new_list .right_item .swiper .swiper-wrapper .swiper-slide .new_text_box .new_icon button img {
   width: 100%;
 }
+.main .text_slide_2 {
+  background-color: rgb(248, 147, 180);
+  color: aliceblue;
+  padding: 20px 0;
+  font-size: 40px;
+  overflow: hidden;
+}
+.main .text_slide_2 p {
+  white-space: nowrap;
+  animation: textslide02 10s infinite linear;
+}
+@keyframes textslide02 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
 .main .category {
-  padding-top: 10rem;
+  padding: 10rem 0;
   /* inner */
 }
 .main .category .inner {
@@ -467,12 +488,26 @@ body {
 }
 .main .category .inner .category_tilte {
   width: 48%;
+  height: 37.1vw;
   /* category_list */
 }
 .main .category .inner .category_tilte h2 {
   font-size: 4rem;
   font-family: var(--font-title-kr);
+  font-weight: bold;
   margin-bottom: 3rem;
+  position: relative;
+}
+.main .category .inner .category_tilte h2::before {
+  content: "";
+  width: 187px;
+  height: 15px;
+  background-color: rgb(255, 192, 203);
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  transform: skew(-47deg);
+  z-index: -1;
 }
 .main .category .inner .category_tilte .category_list ul {
   display: flex;
@@ -491,18 +526,117 @@ body {
   border: 1px solid #333;
   color: #333;
 }
-.main .category .inner .category_tilte .category_item .item_1 {
+.main .category .inner .category_item {
   width: 48%;
+  /* item */
 }
-.main .category .inner .category_tilte .category_item .item_1 .small_item figure {
-  width: 6.8vw;
-  height: 6.8vw;
+.main .category .inner .category_item .item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  display: none;
+  padding-top: 70px;
+  /* small_item */
 }
-.main .category .inner .category_tilte .category_item .item_1 .small_item figure img {
+.main .category .inner .category_item .item.on {
+  display: flex;
+}
+.main .category .inner .category_item .item .small_item {
+  display: flex;
+  gap: 24px;
+  /* category_text_box */
+}
+.main .category .inner .category_item .item .small_item figure {
+  width: 7.8vw;
+  height: 5.8vw;
+}
+.main .category .inner .category_item .item .small_item figure img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.main .category .inner .category_item .item .small_item .category_text_box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* new_text */
+}
+.main .category .inner .category_item .item .small_item .category_text_box .category_text {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  /* new_pay */
+}
+.main .category .inner .category_item .item .small_item .category_text_box .category_text p {
+  font-size: 1.2rem;
+  color: #7B7474;
+}
+.main .category .inner .category_item .item .small_item .category_text_box .category_text h4 {
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: bold;
+  margin-top: 2.5rem;
+}
+.main .category .inner .category_item .item .small_item .category_text_box .category_text .category_pay {
+  display: flex;
+  gap: 1rem;
+}
+.main .category .inner .category_item .item .small_item .category_text_box .category_text .category_pay h5 {
+  color: red;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.main .category .inner .category_item .item .small_item .category_text_box .category_text .category_pay p {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #333;
+}
+.main .category .inner .category_item .item .small_item .category_text_box .category_icon button {
+  width: 3.5rem;
+}
+.main .category .inner .category_item .item .small_item .category_text_box .category_icon button img {
+  width: 100%;
+}
+.main .instargram {
+  padding: 10rem 0;
+  /* instargram_item */
+}
+.main .instargram h2 {
+  font-size: 4rem;
+  font-family: var(--font-title-en);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8rem;
+}
+.main .instargram .instargram_item {
+  position: relative;
+  /* swiper */
+}
+.main .instargram .instargram_item .swiper {
+  position: static;
+  /* swiper-slide */
+}
+.main .instargram .instargram_item .swiper .swiper-slide figure {
+  width: 15.81vw;
+  height: 15.81vw;
+}
+.main .instargram .instargram_item .swiper .swiper-slide figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .swiper-horizontal > .swiper-pagination-bullets, .main .swiper-pagination-bullets.swiper-pagination-horizontal {
+  top: auto;
+  bottom: -40px;
+}
+.main .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .main .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+}
+.main .swiper-pagination-bullet-active {
+  background: url(../img/icon_립스틱.png) center center/100% no-repeat;
 }
 
 /* main *//*# sourceMappingURL=main.css.map */

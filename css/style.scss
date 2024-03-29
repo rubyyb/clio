@@ -1,0 +1,122 @@
+@charset 'utf-8';
+@import url(reset.css);
+
+@font-face {
+    font-family: 'SUIT-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {font-size: 62.8%;}
+.mobile{display: none;}
+
+:root {
+    --title-padding: 100px 0;
+
+    --font-title: 'Giants-Inline';
+    --font-title-en: "Kaushan Script", cursive;
+    --font-title-kr: 'iceJaram-Rg';
+
+}
+body {
+    position: relative;
+    font-family: 'SUIT-Regular';
+}
+
+.inner {
+    max-width: 1440px;
+    width: calc(100% - 24px);
+    margin: 0 auto;
+}
+
+.new_list {
+    .inner {
+        display: flex;
+        justify-content: space-between;
+        .left_item {
+            width: 48%;
+            figure {
+                height: 38.16vw;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }/* left_item */
+
+        .right_item {
+            width: 48%;
+            height: 38.16vw;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            position: relative;
+            .swiper {
+                position: static;
+                .swiper-wrapper {
+                    gap: 24px;
+                    .swiper-slide {
+                        height: 7.4vw;
+                        display: flex;
+                        gap: 24px;
+                        figure {
+                            width: 11.27vw;
+                            height:7.47vw;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                        .new_text_box {
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            .new_text {
+                                display: flex;
+                                justify-content: space-between;
+                                flex-direction: column;
+                                p {
+                                    font-size: 1.2rem;
+                                    color: #7B7474;
+                                }
+                                h4 {
+                                    font-size: 1.6rem;
+                                    color: #333;
+                                    font-weight: bold;
+                                    margin-top: 2.5rem;
+                                }
+                                .new_pay {
+                                    display: flex;
+                                    gap: 1rem;
+                                    h5 {
+                                        color: red;
+                                        font-size: 1.6rem;
+                                        font-weight: bold;
+                                    }
+                                    p {
+                                        font-size: 1.6rem;
+                                        font-weight: bold;
+                                        color: #333;
+                                    }
+                                }/* new_pay */
+                            }/* new_text */
+                            .new_icon {
+                                button {
+                                    width: 3.5rem;
+                                    img {
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }/* new_text_box */
+                    }/* swiper-slide */
+                }/* swiper-wrapper */
+            }
+            
+        }/* right_item */
+    }
+}

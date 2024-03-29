@@ -1,0 +1,126 @@
+@import url(reset.css);
+@font-face {
+  font-family: "SUIT-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+html, body {
+  font-size: 62.8%;
+}
+
+.mobile {
+  display: none;
+}
+
+:root {
+  --title-padding: 100px 0;
+  --font-title: "Giants-Inline";
+  --font-title-en: "Kaushan Script", cursive;
+  --font-title-kr: "iceJaram-Rg";
+}
+
+body {
+  position: relative;
+  font-family: "SUIT-Regular";
+}
+
+.inner {
+  max-width: 1440px;
+  width: calc(100% - 24px);
+  margin: 0 auto;
+}
+
+.new_list .inner {
+  display: flex;
+  justify-content: space-between;
+  /* left_item */
+  /* right_item */
+}
+.new_list .inner .left_item {
+  width: 48%;
+}
+.new_list .inner .left_item figure {
+  height: 38.16vw;
+}
+.new_list .inner .left_item figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.new_list .inner .right_item {
+  width: 48%;
+  height: 38.16vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+}
+.new_list .inner .right_item .swiper {
+  position: static;
+  /* swiper-wrapper */
+}
+.new_list .inner .right_item .swiper .swiper-wrapper {
+  gap: 24px;
+  /* swiper-slide */
+}
+.new_list .inner .right_item .swiper .swiper-wrapper .swiper-slide {
+  height: 7.4vw;
+  display: flex;
+  gap: 24px;
+  /* new_text_box */
+}
+.new_list .inner .right_item .swiper .swiper-wrapper .swiper-slide figure {
+  width: 11.27vw;
+  height: 7.47vw;
+}
+.new_list .inner .right_item .swiper .swiper-wrapper .swiper-slide figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.new_list .inner .right_item .swiper .swiper-wrapper .swiper-slide .new_text_box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* new_text */
+}
+.new_list .inner .right_item .swiper .swiper-wrapper .swiper-slide .new_text_box .new_text {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  /* new_pay */
+}
+.new_list .inner .right_item .swiper .swiper-wrapper .swiper-slide .new_text_box .new_text p {
+  font-size: 1.2rem;
+  color: #7B7474;
+}
+.new_list .inner .right_item .swiper .swiper-wrapper .swiper-slide .new_text_box .new_text h4 {
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: bold;
+  margin-top: 2.5rem;
+}
+.new_list .inner .right_item .swiper .swiper-wrapper .swiper-slide .new_text_box .new_text .new_pay {
+  display: flex;
+  gap: 1rem;
+}
+.new_list .inner .right_item .swiper .swiper-wrapper .swiper-slide .new_text_box .new_text .new_pay h5 {
+  color: red;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.new_list .inner .right_item .swiper .swiper-wrapper .swiper-slide .new_text_box .new_text .new_pay p {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #333;
+}
+.new_list .inner .right_item .swiper .swiper-wrapper .swiper-slide .new_text_box .new_icon button {
+  width: 3.5rem;
+}
+.new_list .inner .right_item .swiper .swiper-wrapper .swiper-slide .new_text_box .new_icon button img {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */

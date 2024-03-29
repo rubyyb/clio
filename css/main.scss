@@ -199,6 +199,7 @@ body {
         color: aliceblue;
         padding: 20px 0;
         font-size: 40px;
+        overflow: hidden;
         p {
             white-space: nowrap;
             animation: textslide 10s infinite linear;
@@ -257,54 +258,237 @@ body {
                     }
                 }
                 p {
-                    font-size: 1.6rem;
+                    a {
+                        display: block;
+                        width: 300px;
+                        font-size: 1.6rem;
+                        
+                    }
                 }
             }/* best_header end */
             .best_list {
                 width: 78%;
                 position: relative;
-                .swiper-wrapper {
-                    width: calc(100% / 3);
-                    .swiper-slide {
-                        width: 100%;
-                        figure {
-                            height: 21vw;
-                            img {
-                                width: 100%;
-                                height: 100%;
-                                object-fit: cover;
-                            }
-                        }
-                        .text {
-                            margin-top: 2rem;
-                            p {
-                                font-size: 1.2rem;
-                                color: #7B7474;
-                            }
-                            h4 {
-                                font-size: 1.6rem;
-                                margin: 10px 0;
-                                word-break: keep-all;
-                                font-weight: bold;
-                            }
-                            div {
-                                display: flex;
-                                font-size: 1.6rem;
-                                h5 {
-                                    color: red;
-                                    font-weight: bold;
-                                    margin-right: 1.5rem;
+                .swiper {
+                    position: static;
+                    .swiper-wrapper {
+                        width: calc(100% / 3);
+                        .swiper-slide {
+                            width: 100%;
+                            figure {
+                                height: 21vw;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
                                 }
+                            }
+                            .text {
+                                margin-top: 2rem;
                                 p {
-                                    font-weight: bold;
-                                    color: #333;
+                                    font-size: 1.2rem;
+                                    color: #7B7474;
+                                }
+                                h4 {
                                     font-size: 1.6rem;
+                                    margin: 10px 0;
+                                    word-break: keep-all;
+                                    font-weight: bold;
+                                }
+                                div {
+                                    display: flex;
+                                    font-size: 1.6rem;
+                                    h5 {
+                                        color: red;
+                                        font-weight: bold;
+                                        margin-right: 1.5rem;
+                                    }
+                                    p {
+                                        font-weight: bold;
+                                        color: #333;
+                                        font-size: 1.6rem;
+                                    }
                                 }
                             }
-                        }
-                    }/* swiper-slide */
-                }/* swiper-wrapper end */
+                        }/* swiper-slide */
+                    }/* swiper-wrapper end */
+                }
             }/* best_list end */
         }/* inner end */
     }/* best */
+    .swiper-horizontal>.swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal, .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite, .swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite{
+        top: auto;
+        bottom: -28px;
+    }
+    .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+        background-color: #333;
+    }
+
+    .new {
+        padding-top: 10rem;
+        h2 {
+            font-family: var(--font-title-en);
+            font-size: 4rem;
+            margin-bottom: 8rem;
+            display: flex;
+            justify-content: center;
+        }
+        .plus {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 2.5rem;
+            p {
+                font-size: 1.6rem;
+                font-weight: bold;
+                line-height: 30px;
+                margin-right: 1rem;
+            }
+            button{
+                width: 30px;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .new_list {
+            display: flex;
+            justify-content: space-between;
+            .left_item {
+                width: 48%;
+                figure {
+                    height: 38.16vw;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }/* left_item */
+
+            .right_item {
+                width: 48%;
+                height: 38.16vw;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                position: relative;
+                .swiper {
+                    position: static;
+                    .swiper-wrapper {
+                        gap: 24px;
+                        .swiper-slide {
+                            height: 7.4vw;
+                            display: flex;
+                            gap: 24px;
+                            figure {
+                                width: 11.27vw;
+                                height:7.47vw;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+                            .new_text_box {
+                                width: 100%;
+                                display: flex;
+                                justify-content: space-between;
+                                .new_text {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    flex-direction: column;
+                                    p {
+                                        font-size: 1.2rem;
+                                        color: #7B7474;
+                                    }
+                                    h4 {
+                                        font-size: 1.6rem;
+                                        color: #333;
+                                        font-weight: bold;
+                                        margin-top: 2.5rem;
+                                    }
+                                    .new_pay {
+                                        display: flex;
+                                        gap: 1rem;
+                                        h5 {
+                                            color: red;
+                                            font-size: 1.6rem;
+                                            font-weight: bold;
+                                        }
+                                        p {
+                                            font-size: 1.6rem;
+                                            font-weight: bold;
+                                            color: #333;
+                                        }
+                                    }/* new_pay */
+                                }/* new_text */
+                                .new_icon {
+                                    button {
+                                        width: 3.5rem;
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }/* new_text_box */
+                        }/* swiper-slide */
+                    }/* swiper-wrapper */
+                }
+                
+            }/* right_item */
+        }/* new_list */
+    }/* new */
+
+    .category {
+        padding-top: 10rem;
+        .inner {
+            display: flex;
+            justify-content: space-between;
+            .category_tilte {
+                width: 48%;
+                h2 {
+                    font-size: 4rem;
+                    font-family: var(--font-title-kr);
+                    margin-bottom: 3rem;
+                }
+                .category_list {
+                    ul {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 24px;
+                        row-gap: 20px;
+                        li {
+                            font-size: 1.8rem;
+                            padding: 5px 20px;
+                            border-radius: 20px;
+                            border: 1px solid #D9D9D9;
+                            color: #8f8f8f;
+                            &.on {
+                                border: 1px solid #333;
+                                color: #333;
+                            }
+                        }
+                    }
+                }/* category_list */
+
+                .category_item {
+                    .item_1 {
+                        width: 48%;
+                        .small_item {
+                            figure {
+                                width: 6.8vw;
+                                height: 6.8vw;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+                        }
+                    }
+                }                
+            }/* category_tilte */
+        }/* inner */
+    }/* category */
 }/* main */

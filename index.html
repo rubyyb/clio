@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/main.scss">
+    <link rel="icon" href="img/CLIO.png">
 
     <!-- 섹션 제목 폰트 링크 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,6 +21,19 @@
 
     <script>
         $(function(){
+
+            //스크롤시 header 스타일변경
+            let header = document.querySelector('.header');
+
+            window.addEventListener('scroll', () => {
+                let scrollBar = window.scrollY;
+                if(scrollBar > 0) {
+                    header.classList.add('on')
+                } else {
+                    header.classList.remove('on')
+                }
+            })
+
             //header_menu
             let openBtn = document.getElementsByClassName('open_btn')[0];
             let menu = document.getElementsByClassName('pc_gnb')[0];
@@ -302,7 +316,7 @@
             </section><!-- cont01 end -->
 
             <section class="text_slide">
-                <p>Meet Club Clio's best and new products Meet Club Clio's best and new products Meet Club Clio's best and new products</p>
+                <p>Meet Club Clio's best and new products Meet Club Clio's best and new products Meet Club Clio's best and new products Meet Club Clio's best and new products Meet Club Clio's best and new products Meet Club Clio's best and new products Meet Club Clio's best and new products Meet Club Clio's best and new products Meet Club Clio's best and new products</p>
             </section><!-- text_slide -->
 
             <sectipn class="best">
@@ -629,7 +643,7 @@
             </section><!-- new end -->
 
             <section class="text_slide_2">
-                <p>Meet Club Clio's best and new products Meet Club Clio's best and new products Meet Club Clio's best and new products</p>
+                <p>Let's see the category ranking Let's see the category ranking Let's see the category ranking Let's see the category ranking Let's see the category ranking Let's see the category ranking</p>
             </section><!-- text_slide -->
 
             <section class="category">
@@ -2225,6 +2239,76 @@
                 
             </section><!-- instargram end -->
         </main><!-- main end -->
+
+        <footer class="footer">
+            <div class="inner">
+                <div class="footer_left">
+                    <div class="footer_1">
+                        <ul>
+                            <li><a href="#">클리오</a></li>
+                            <li><a href="#">페리페라</a></li>
+                            <li><a href="#">구달</a></li>
+                            <li><a href="#">더마토리</a></li>
+                            <li><a href="#">힐링버드</a></li>
+                            <li><a href="#">심플레인</a></li>
+                            <li><a href="#">타입넘버</a></li>
+                            <li><a href="#">알파비</a></li>
+                            <li><a href="#">트루알엑스</a></li>
+                        </ul>
+                    </div><!-- footer_1 end -->
+                    <div class="footer_2">
+                        <ul>
+                            <li><a href="#">회사소개</a></li>
+                            <li class="footer_2_bold"><a href="#">개인정보 처리방침</a></li>
+                            <li><a href="#">웹 사이트 이용 약관</a></li>
+                            <li><a href="#">이메일무단수집거부</a></li>
+                        </ul>
+                    </div><!-- footer_2 -->
+                    <div class="footer_3">
+                        <p>(주)클리오</p>
+                        <div class="footer_3_text">
+                            <p>사업자등록번호 : 211-86-22189</p>
+                            <p>대표 : 한현옥</p>
+                            <p>통신판매업신고번호 : 제 2020-서울성동-00339호</p>
+                            <p>사업자정보확인</p>
+                            <p>개인정보담당자 : 이연재 팀장</p>
+                            <p>본사 서울 성동구 왕십리로 66 (성수동1가)</p>
+                        </div><!-- footer_3_text end -->
+                    </div><!-- footer_3 -->
+                    <div class="footer_4">
+                        <p>COPYRIGHY © 2022 CLUBCLIO.co.ltd.ALL RIGHT RESERVED.</p>
+                    </div><!-- footer_4 -->
+                </div><!-- footer_left -->
+
+                <div class="footer_right">
+                    <div class="footer_right_1">
+                        <ul>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Youtube</a></li>
+                        </ul>
+                    </div><!-- footer_right_1 -->
+                    <div class="footer_right_2">
+                        <p>고객 센터    020-080-1510</p>
+                        <p>평일 : 10시 ~ 17시</p>
+                        <p>점심시간 : 12시30분 ~ 13시 30분</p>
+                        <p>주말/공휴일 휴무</p>
+                    </div><!-- footer_right_2 -->
+                    <div class="footer_right_3">
+                        <div class="footer_button">
+                            <p class="text">제휴/마케팅:</p>
+                            <p class="button"><a href="#">담당부터 확인하기</a></p>
+                        </div><!-- footer_button -->
+                        <p>IR: clioir@clio.co.kr</p>
+                        <div class="footer_button">
+                            <p class="text">해외수출:</p>
+                            <p class="button"><a href="#">담당부터 확인하기</a></p>
+                        </div><!-- footer_button -->
+                    </div><!-- footer_right_3 -->
+                </div><!-- footer_right -->
+            </div><!-- inner -->
+        </footer><!-- footer end -->
+
     </div><!-- wrap -->
 
     <script>

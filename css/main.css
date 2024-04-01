@@ -37,6 +37,10 @@ html, body {
   font-size: 62.8%;
 }
 
+body {
+  cursor: pointer;
+}
+
 .mobile {
   display: none;
 }
@@ -61,12 +65,16 @@ body {
 
 .header {
   width: 100%;
-  margin: 20px 0;
+  padding: 20px 0;
   position: fixed;
   display: block;
   z-index: 9999;
   /* header_main end */
   /* header_menu */
+}
+.header.on {
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid #333;
 }
 .header .header_main {
   display: flex;
@@ -98,6 +106,8 @@ body {
 }
 .header .header_menu {
   display: none;
+  height: 100vh;
+  overflow: scroll;
   /* pc */
 }
 .header .header_menu.on::after {
@@ -111,6 +121,9 @@ body {
   transform: skew(-4deg);
   background-color: #fff;
   box-shadow: 1px 0 18px rgba(0, 0, 0, 0.16);
+}
+.header .header_menu::-webkit-scrollbar {
+  display: none;
 }
 .header .header_menu .pc {
   /* pc_gnb */
@@ -219,10 +232,10 @@ body {
 }
 @keyframes textslide {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0%);
   }
   100% {
-    transform: translateX(0%);
+    transform: translateX(-100%);
   }
 }
 .main .best {
@@ -245,7 +258,7 @@ body {
   height: 1px;
   background-color: #333;
   position: absolute;
-  top: 79px;
+  top: 99px;
   left: 55px;
 }
 .main .best .inner .best_header::after {
@@ -254,14 +267,15 @@ body {
   height: 10px;
   border-right: 1px solid #333;
   position: absolute;
-  top: 79px;
+  top: 99px;
   left: 80px;
   transform: skew(-47deg);
 }
 .main .best .inner .best_header h2 {
   font-family: var(--font-title-en);
-  font-size: 4rem;
+  font-size: 6rem;
   margin-bottom: 3rem;
+  color: #0e6d06;
 }
 .main .best .inner .best_header h2::before {
   z-index: -1;
@@ -271,7 +285,7 @@ body {
   background-color: #F7ECE2;
   border-radius: 50%;
   position: absolute;
-  top: 67px;
+  top: 87px;
   left: 80px;
 }
 .main .best .inner .best_header p a {
@@ -343,10 +357,11 @@ body {
 }
 .main .new h2 {
   font-family: var(--font-title-en);
-  font-size: 4rem;
+  font-size: 6rem;
   margin-bottom: 8rem;
   display: flex;
   justify-content: center;
+  color: #0e6d06;
 }
 .main .new .plus {
   display: flex;
@@ -471,10 +486,10 @@ body {
 }
 @keyframes textslide02 {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0%);
   }
   100% {
-    transform: translateX(0%);
+    transform: translateX(-100%);
   }
 }
 .main .category {
@@ -603,11 +618,12 @@ body {
   /* instargram_item */
 }
 .main .instargram h2 {
-  font-size: 4rem;
+  font-size: 6rem;
   font-family: var(--font-title-en);
   display: flex;
   justify-content: center;
   margin-bottom: 8rem;
+  color: #0e6d06;
 }
 .main .instargram .instargram_item {
   position: relative;
@@ -630,13 +646,157 @@ body {
 .main .swiper-horizontal > .swiper-pagination-bullets, .main .swiper-pagination-bullets.swiper-pagination-horizontal {
   top: auto;
   bottom: -40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .main .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .main .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-  width: 15px;
-  height: 15px;
+  width: 14px;
+  height: 14px;
+  margin: 0 7px;
 }
-.main .swiper-pagination-bullet-active {
+.main .swiper-pagination-bullet {
+  display: block;
+  position: relative;
+  width: 14px;
+  height: 14px;
+  margin: 0 10px;
+  background: transparent;
+  opacity: 1;
+}
+.main .swiper-pagination-bullet::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+  background-color: #f1cfcf;
+}
+.main .swiper-pagination-bullet-active::before {
+  content: "";
+  width: 37px;
+  height: 40px;
+  margin: 0;
   background: url(../img/icon_립스틱.png) center center/100% no-repeat;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-/* main *//*# sourceMappingURL=main.css.map */
+/* main */
+.footer {
+  font-size: 1.5rem;
+  color: #666;
+  /* inner */
+}
+.footer .inner {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #333;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  margin-bottom: 20px;
+  /* footer_left */
+  /* footer_right */
+}
+.footer .inner .footer_left {
+  /* footer_1 */
+  /* footer_2 */
+  /* footer_3 */
+}
+.footer .inner .footer_left .footer_1 {
+  padding: 1rem 0;
+}
+.footer .inner .footer_left .footer_1 ul {
+  display: flex;
+  justify-content: flex-start;
+  font-weight: bold;
+}
+.footer .inner .footer_left .footer_1 ul li {
+  margin-right: 2rem;
+}
+.footer .inner .footer_left .footer_2 {
+  color: #999;
+  padding: 1rem 0;
+  font-size: 1.4rem;
+}
+.footer .inner .footer_left .footer_2 ul {
+  display: flex;
+  justify-content: flex-start;
+}
+.footer .inner .footer_left .footer_2 ul li {
+  margin-right: 5px;
+  padding-right: 5px;
+  border-right: 1px solid #b3b2b2;
+}
+.footer .inner .footer_left .footer_2 ul .footer_2_bold {
+  font-weight: bold;
+}
+.footer .inner .footer_left .footer_3 {
+  width: 300px;
+  font-size: 1.3rem;
+  color: #999;
+}
+.footer .inner .footer_left .footer_3 > p {
+  font-size: 1.6rem;
+  padding-bottom: 1rem;
+}
+.footer .inner .footer_left .footer_3 .footer_3_text {
+  display: flex;
+  flex-direction: column;
+}
+.footer .inner .footer_left .footer_3 .footer_3_text p {
+  padding-bottom: 5px;
+}
+.footer .inner .footer_left .footer_4 {
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+  color: #999;
+}
+.footer .inner .footer_right {
+  font-size: 1.6rem;
+  color: #999;
+  /* footer_right_1 */
+  /* footer_right_2 */
+}
+.footer .inner .footer_right .footer_right_1 {
+  padding: 1rem 0;
+}
+.footer .inner .footer_right .footer_right_1 ul {
+  display: flex;
+  justify-content: flex-start;
+}
+.footer .inner .footer_right .footer_right_1 ul li {
+  margin-right: 2rem;
+}
+.footer .inner .footer_right .footer_right_1 ul li:last-child {
+  margin-right: 0;
+}
+.footer .inner .footer_right .footer_right_2 p {
+  padding-bottom: 5px;
+}
+.footer .inner .footer_right .footer_right_2 p:last-child {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #999;
+  margin-bottom: 5px;
+}
+.footer .inner .footer_right .footer_right_3 .footer_button {
+  display: flex;
+  justify-content: flex-start;
+}
+.footer .inner .footer_right .footer_right_3 .footer_button .text {
+  margin-right: 1rem;
+  padding: 5px 0;
+}
+.footer .inner .footer_right .footer_right_3 .footer_button .button {
+  padding: 5px;
+  border: 1px solid #999;
+}
+.footer .inner .footer_right .footer_right_3 p {
+  margin: 5px 0;
+}
+
+/* footer *//*# sourceMappingURL=main.css.map */

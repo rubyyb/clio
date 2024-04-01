@@ -50,6 +50,18 @@
                 }
             })/* openBtn end */
 
+            //search_box
+            let searchBox = document.querySelector('.search_box');
+            let searchBtn = document.querySelector('.user .seacrh');
+
+            searchBtn.addEventListener('click', () => {
+                // alert();
+                if(getComputedStyle(searchBox).display === 'none') {
+                    searchBox.style.display = 'block';
+                } else {
+                    searchBox.style.display = 'none';
+                }
+            })
 
             //new_item_hover
             let leftImg = document.querySelector('.left_item img');
@@ -94,10 +106,17 @@
                     <h1><a href="index.html">CLUB CLIO</a></h1>
                     <button class="user">
                         <figure><img src="img/icon_user.png" alt="로그인/마이페이지"/></figure>
-                        <figure><img src="img/icon_seacrh.png" alt="검색"/></figure>
+                        <figure class="seacrh"><img src="img/icon_seacrh.png" alt="검색"/></figure>
                         <figure><img src="img/icon-cart.png" alt="장바구니"/></figure>
                     </button><!-- user end -->
                 </div><!-- header_main end -->
+
+                <div class="search_box">
+                    <div class="search_box_inner">
+                        <input type="text" placeholder="검색어를 입력해주세요.">
+                        <img src="img/icon_seacrh.png" alt="검색">
+                    </div><!-- search_box_inner -->
+                </div><!--search_box end  -->
 
                 <button class="open_btn">
                     <img src="img/icon_menu.png" alt="메뉴"/>

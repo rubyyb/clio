@@ -95,6 +95,36 @@ body {
         }/* button end */
     }/* header_main end */
 
+    .search_box {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        display: none;
+        .search_box_inner{
+            max-width: 1440px;
+            width: calc(100% - 24px);
+            margin: 0 auto;
+            position: relative;
+            display: flex;
+            justify-content: flex-end;
+            input[type='text'] {
+                width: 30%;
+                height: 50px;
+                border: 0;
+                border-radius: 10px;
+                padding: 20px 10px;
+            }
+            img {
+                height: 30px;
+                position: absolute;
+                top: 50%;
+                right: 20px;
+                transform: translateY(-50%);
+            }
+        }/* search_box_inner */
+    }/* search_box */
+
     .open_btn img {
         margin-top: 3.5rem;
         width: 35px;

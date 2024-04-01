@@ -70,6 +70,7 @@ body {
   display: block;
   z-index: 9999;
   /* header_main end */
+  /* search_box */
   /* header_menu */
 }
 .header.on {
@@ -98,6 +99,36 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.header .search_box {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: none;
+  /* search_box_inner */
+}
+.header .search_box .search_box_inner {
+  max-width: 1440px;
+  width: calc(100% - 24px);
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+.header .search_box .search_box_inner input[type=text] {
+  width: 30%;
+  height: 50px;
+  border: 0;
+  border-radius: 10px;
+  padding: 20px 10px;
+}
+.header .search_box .search_box_inner img {
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
 }
 .header .open_btn img {
   margin-top: 3.5rem;

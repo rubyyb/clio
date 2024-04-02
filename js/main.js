@@ -11,8 +11,15 @@ $(function(){
     //스크롤시 header 스타일변경
     let header = document.querySelector('.header');
 
+    //header_menu
+    let openBtn = document.getElementsByClassName('open_btn')[0];
+    let menu = document.getElementsByClassName('pc_gnb')[0];
+    let menuAfter = document.getElementsByClassName('header_menu')[0];
+
+    // 얘는 스크롤할 때마다 실행되는 이벤트 리스너야
     window.addEventListener('scroll', () => {
         let scrollBar = window.scrollY;
+        if(menuAfter.classList.contains('on')) return;
         if(scrollBar > 0) {
             header.classList.add('on')
         } else {
@@ -20,19 +27,20 @@ $(function(){
         }
     })
 
-    //header_menu
-    let openBtn = document.getElementsByClassName('open_btn')[0];
-    let menu = document.getElementsByClassName('pc_gnb')[0];
-    let menuAfter = document.getElementsByClassName('header_menu')[0];
-
     openBtn.addEventListener('click', () => {
         // alert();
         if(getComputedStyle(menuAfter).display === 'none') {
             menuAfter.style.display = 'block';
             menuAfter.classList.add('on'); 
+            if(header.classList.contains('on')) {
+                header.classList.remove('on');
+            }
         } else {
             menuAfter.style.display = 'none';
-            menuAfter.classList.remove('on'); 
+            menuAfter.classList.remove('on');
+            if(window.scrollY > 0) {
+                header.classList.add('on');
+            }
         }
     })/* openBtn end */
 

@@ -88,4 +88,44 @@ $(function(){
             categoryItem[i].classList.add('on');
         })
     }
+
+    //메인비주얼 슬라이드
+        var swiper = new Swiper(".main_visual_slide", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        //best_item_slide
+        var swiper = new Swiper(".best_item_slide", {
+            slidesPerView: 3,
+            spaceBetween: 24,
+            pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+            },
+        });
+
+
+        //new_right_slide
+        var swiper = new Swiper(".mySwiper", {
+            direction: "vertical",
+            slidesPerView: "auto",
+            freeMode: true,
+            scrollbar: {
+                el: ".swiper-scrollbar",
+            },
+            mousewheel: true,
+        });
+
+        //인스타그램 슬라이드
+        var swiper = new Swiper(".instargram_item_slide", {
+            slidesPerView: 5.5,
+            spaceBetween: 24,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
 })/* script end */

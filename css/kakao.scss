@@ -1,0 +1,40 @@
+@charset "utf-8";
+@import url(reset.css);
+
+.main {
+    .login {
+        padding: 20rem 0 10rem;
+        .inner {
+            width: 40rem;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            h1 {
+                font-size: 5rem;
+                padding-bottom: 5rem;
+            }
+            .kakao_btn {
+                width: 100%;
+                height: 5rem;
+                text-align: center;
+                line-height: 5.6rem;
+                background-color: yellow;
+                position: relative;
+                &::before {
+                    content: '';
+                    width: 30px;
+                    height: 30px;
+                    background: url(../img/icon-kakao.png) center center / 100% no-repeat;
+                    position: absolute;
+                    top: 49%;
+                    left: 18%;
+                    transform: translateY(-50%);
+                }
+                a {
+                    font-size: 1.8rem;
+                    padding-left: 3rem;
+                }
+            }/* kakao_btn */
+        }
+    }
+}

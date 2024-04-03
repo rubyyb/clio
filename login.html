@@ -3,9 +3,333 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>login</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/login.scss">
+    <link rel="icon" href="img/CLIO.png">
+
+    <!-- 섹션 제목 폰트 링크 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+    <!-- 스크립트 링크 -->
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script src="lib/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.1/kakao.min.js" integrity="sha384-kDljxUXHaJ9xAb2AzRd59KxjrFjzHa5TAoFQ6GbYTCAG0bjM55XohjjDT7tDDC01" crossorigin="anonymous"></script>
+    <script>
+        Kakao.init('c089c8172def97eb00c07217cae17495'); // 사용하려는 앱의 JavaScript 키 입력
+    </script>
+
+    <script>
+        function new_window() {
+            window.open(
+            "kakao.html",
+            "kakao",
+            "width=500, height=700, top=100, left=100"
+            );
+        }
+
+        function loginWithKakao() {
+            Kakao.Auth.authorize({
+            redirectUri: 'https://developers.kakao.com/tool/demo/oauth',
+            });
+        }
+
+        // 아래는 데모를 위한 UI 코드입니다.
+        displayToken()
+        function displayToken() {
+            var token = getCookie('authorize-access-token');
+
+            if(token) {
+            Kakao.Auth.setAccessToken(token);
+            Kakao.Auth.getStatusInfo()
+                .then(function(res) {
+                if (res.status === 'connected') {
+                    document.getElementById('token-result').innerText
+                    = 'login success, token: ' + Kakao.Auth.getAccessToken();
+                }
+                })
+                .catch(function(err) {
+                Kakao.Auth.setAccessToken(null);
+                });
+            }
+        }
+
+        function getCookie(name) {
+            var parts = document.cookie.split(name + '=');
+            if (parts.length === 2) { return parts[1].split(';')[0]; }
+        }
+    </script>
 </head>
 <body>
-    
+    <div class="wrap">
+        <div class="top_btn">
+            <div class="top">
+                <a href="#"><button>TOP</button></a>
+            </div><!-- top end -->
+            <div class="call">
+                <a href="#">
+                    <img src="img/icons_고객센터.png" alt="고객센터">
+                    <button>고객센터</button>
+                </a>
+            </div><!-- call end -->
+        </div><!-- top_btn -->
+
+        <header class="header">
+            <div class="inner">
+                <div class="header_main">
+                    <h1><a href="index.html">CLUB CLIO</a></h1>
+                    <button class="user">
+                        <figure><a href="login.html"><img src="img/icon_user.png" alt="로그인/마이페이지"/></a></figure>
+                        <figure class="seacrh"><img src="img/icon_seacrh.png" alt="검색"/></figure>
+                        <figure><img src="img/icon-cart.png" alt="장바구니"/></figure>
+                    </button><!-- user end -->
+                </div><!-- header_main end -->
+
+                <div class="search_box">
+                    <div class="search_box_inner">
+                        <input type="text" placeholder="검색어를 입력해주세요.">
+                        <img src="img/icon_seacrh.png" alt="검색">
+                    </div><!-- search_box_inner -->
+                </div><!--search_box end  -->
+
+                <button class="open_btn">
+                    <img src="img/icon_menu.png" alt="메뉴"/>
+                </button><!-- open_btn end -->
+
+                <div class="header_menu">
+                    <nav class="pc">
+                        <ul class="pc_gnb">
+                            <li class="depth01">
+                                <a href="#">CLIO</a>
+                                <ul class="depth02">
+                                    <li><a href="#">전체보기</a></li>
+                                    <li><a href="#">베이스</a></li>
+                                    <li><a href="#">립</a></li>
+                                    <li><a href="#">아이</a></li>
+                                    <li><a href="#">치크/컨투어링</a></li>
+                                    <li><a href="#">미용소품/잡화</a></li>
+                                    <li><a href="#">클렌징/선케어</a></li>
+                                </ul><!-- depth02 -->
+                            </li><!-- depth01 end -->
+                            <li class="depth01">
+                                <a href="#">Preipera</a>
+                                <ul class="depth02">
+                                    <li><a href="#">전체보기</a></li>
+                                    <li><a href="#">베이스</a></li>
+                                    <li><a href="#">립</a></li>
+                                    <li><a href="#">아이</a></li>
+                                    <li><a href="#">치크/컨투어링</a></li>
+                                    <li><a href="#">미용소품/잡화</a></li>
+                                    <li><a href="#">클렌징/선케어</a></li>
+                                </ul><!-- depth02 -->
+                            </li><!-- depth01 end -->
+                            <li class="depth01">
+                                <a href="#">Goodal</a>
+                                <ul class="depth02">
+                                    <li><a href="#">전체보기</a></li>
+                                    <li><a href="#">세럼/에센스</a></li>
+                                    <li><a href="#">토너/미스트</a></li>
+                                    <li><a href="#">로션/크림</a></li>
+                                    <li><a href="#">패드/마스크</a></li>
+                                    <li><a href="#">클렌징/선케어</a></li>
+                                </ul><!-- depth02 -->
+                            </li><!-- depth01 end -->
+                            <li class="depth01">
+                                <a href="#">Dermatory</a>
+                                <ul class="depth02">
+                                    <li><a href="#">전체보기</a></li>
+                                    <li><a href="#">세럼/에센스</a></li>
+                                    <li><a href="#">토너/미스트</a></li>
+                                    <li><a href="#">로션/크림</a></li>
+                                    <li><a href="#">패드/마스크</a></li>
+                                    <li><a href="#">클렌징/선케어</a></li>
+                                </ul><!-- depth02 -->
+                            </li><!-- depth01 end -->
+                            <li class="depth01">
+                                <a href="#">Healingbird</a>
+                                <ul class="depth02">
+                                    <li><a href="#">전체보기</a></li>
+                                    <li><a href="#">헤어케어</a></li>
+                                </ul><!-- depth02 -->
+                            </li><!-- depth01 end -->
+                            <li class="depth01">
+                                <a href="#">Sim;plain</a>
+                                <ul class="depth02">
+                                    <li><a href="#">전체보기</a></li>
+                                    <li><a href="#">립</a></li>
+                                    <li><a href="#">아이</a></li>
+                                    <li><a href="#">미용소품/잡화</a></li>
+                                </ul><!-- depth02 -->
+                            </li><!-- depth01 end -->
+                            <li class="depth01">
+                                <a href="#">TYPE No.</a>
+                                <ul class="depth02">
+                                    <li><a href="#">전체보기</a></li>
+                                    <li><a href="#">바디케어</a></li>
+                                    <li><a href="#">홈 프래그런스</a></li>
+                                </ul><!-- depth02 -->
+                            </li><!-- depth01 end -->
+                            <li class="depth01">
+                                <a href="#">ALPHA.B</a>
+                                <ul class="depth02">
+                                    <li><a href="#">전체보기</a></li>
+                                    <li><a href="#">세럼/에센스</a></li>
+                                    <li><a href="#">토너/미스트</a></li>
+                                    <li><a href="#">클렌징/선케어</a></li>
+                                </ul><!-- depth02 -->
+                            </li><!-- depth01 end -->
+                            <li class="depth01">
+                                <a href="#">TRUE RX</a>
+                                <ul class="depth02">
+                                    <li><a href="#">전체보기</a></li>
+                                    <li><a href="#">이너뷰티</a></li>
+                                </ul><!-- depth02 -->
+                            </li><!-- depth01 end -->
+                        </ul><!-- pc_gnb end -->
+                    </nav><!-- pc -->
+                </div><!-- header_menu -->
+            </div><!-- inner end -->
+        </header><!-- header end -->
+
+        <main class="main">
+            <div class="login">
+                <div class="inner">
+                    <h1>로그인</h1>
+                    <div class="kakao_btn">
+                        <button class="kakao" >
+                            <p href="#" value="New Window" onclick="new_window();">카카오로 1초만에 시작하기</p>
+                            
+                        </button><!-- kakao -->
+                    </div><!-- kakao_btn -->
+
+                    <div class="box_btn">
+                        <div class="or_line">
+                            <hr class="hr" size="1">
+                            <p class="text">OR</p>
+                            <hr class="hr" size="1">
+                        </div><!-- or_line -->
+
+                        <div class="id_password">
+                            <div class="id_box">
+                                <input type="text" placeholder="아이디"/>
+                            </div><!-- id_box -->
+                            <div class="id_box password">
+                                <input type="text" placeholder="비밀번호(대문자+숫자+특수문자 조합 8~20자리)"/>
+                            </div><!-- password -->
+
+                            <div class="check_box">
+                                <ul>
+                                    <li><input type="checkbox"><p>아이디저장</p></li>
+                                    <li><input type="checkbox"><p>자동로그인</p></li>
+                                </ul>
+                            </div><!-- check_box -->
+
+                            <div class="login_box">
+                                <a href="#">로그인</a>
+                            </div><!-- login_box -->
+                        </div><!-- id_password end -->
+
+                        <div class="last_login">
+                            <ul>
+                                <li><a href="#">아이디 찾기</a></li>
+                                <li><a href="#">비밀번호 찾기</a></li>
+                                <li><a href="#">회원가입</a></li>
+                                <li><a href="#">비회원 주문조회</a></li>
+                            </ul>
+                        </div><!-- last_login -->
+
+                        <div class="or_line">
+                            <hr class="hr" size="1">
+                            <p class="text">OR</p>
+                            <hr class="hr" size="1">
+                        </div><!-- or_line -->
+
+                        <div class="btn_icon">
+                            <a href="#">
+                                <img src="img/ico_naver.png" alt="네이버">
+                            </a>
+                            <a href="#">
+                                <img src="img/ico_apple.svg" alt="애플">
+                            </a>
+                        </div><!-- naver -->
+                    </div><!-- box_btn -->
+                </div><!-- inner -->
+            </div><!-- login -->
+        </main><!-- main -->
+
+        <footer class="footer">
+            <div class="inner">
+                <div class="footer_left">
+                    <div class="footer_1">
+                        <ul>
+                            <li><a href="#">클리오</a></li>
+                            <li><a href="#">페리페라</a></li>
+                            <li><a href="#">구달</a></li>
+                            <li><a href="#">더마토리</a></li>
+                            <li><a href="#">힐링버드</a></li>
+                            <li><a href="#">심플레인</a></li>
+                            <li><a href="#">타입넘버</a></li>
+                            <li><a href="#">알파비</a></li>
+                            <li><a href="#">트루알엑스</a></li>
+                        </ul>
+                    </div><!-- footer_1 end -->
+                    <div class="footer_2">
+                        <ul>
+                            <li><a href="#">회사소개</a></li>
+                            <li class="footer_2_bold"><a href="#">개인정보 처리방침</a></li>
+                            <li><a href="#">웹 사이트 이용 약관</a></li>
+                            <li><a href="#">이메일무단수집거부</a></li>
+                        </ul>
+                    </div><!-- footer_2 -->
+                    <div class="footer_3">
+                        <p>(주)클리오</p>
+                        <div class="footer_3_text">
+                            <p>사업자등록번호 : 211-86-22189</p>
+                            <p>대표 : 한현옥</p>
+                            <p>통신판매업신고번호 : 제 2020-서울성동-00339호</p>
+                            <p>사업자정보확인</p>
+                            <p>개인정보담당자 : 이연재 팀장</p>
+                            <p>본사 서울 성동구 왕십리로 66 (성수동1가)</p>
+                        </div><!-- footer_3_text end -->
+                    </div><!-- footer_3 -->
+                    <div class="footer_4">
+                        <p>COPYRIGHY © 2022 CLUBCLIO.co.ltd.ALL RIGHT RESERVED.</p>
+                    </div><!-- footer_4 -->
+                </div><!-- footer_left -->
+
+                <div class="footer_right">
+                    <div class="footer_right_1">
+                        <ul>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Youtube</a></li>
+                        </ul>
+                    </div><!-- footer_right_1 -->
+                    <div class="footer_right_2">
+                        <p>고객 센터    020-080-1510</p>
+                        <p>평일 : 10시 ~ 17시</p>
+                        <p>점심시간 : 12시30분 ~ 13시 30분</p>
+                        <p>주말/공휴일 휴무</p>
+                    </div><!-- footer_right_2 -->
+                    <div class="footer_right_3">
+                        <div class="footer_button">
+                            <p class="text">제휴/마케팅:</p>
+                            <p class="button"><a href="#">담당부터 확인하기</a></p>
+                        </div><!-- footer_button -->
+                        <p>IR: clioir@clio.co.kr</p>
+                        <div class="footer_button">
+                            <p class="text">해외수출:</p>
+                            <p class="button"><a href="#">담당부터 확인하기</a></p>
+                        </div><!-- footer_button -->
+                    </div><!-- footer_right_3 -->
+                </div><!-- footer_right -->
+            </div><!-- inner -->
+        </footer><!-- footer end -->
+    </div><!-- wrap -->
 </body>
 </html>

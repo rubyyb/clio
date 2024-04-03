@@ -1,0 +1,200 @@
+@import url(reset.css);
+@import url(main&footer.css);
+@import url(main&footer.scss);
+.main {
+  /* login */
+}
+.main .login {
+  padding: 20rem 0 10rem;
+  /* inner */
+}
+.main .login .inner {
+  width: 40rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* kakao_btn */
+  /* box_btn */
+}
+.main .login .inner h1 {
+  font-size: 5rem;
+  padding-bottom: 5rem;
+}
+.main .login .inner .kakao_btn {
+  width: 100%;
+  height: 5rem;
+  text-align: center;
+  line-height: 5.6rem;
+  background-color: yellow;
+  position: relative;
+}
+.main .login .inner .kakao_btn::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: url(../img/icon-kakao.png) center center/100% no-repeat;
+  position: absolute;
+  top: 49%;
+  left: 18%;
+  transform: translateY(-50%);
+}
+.main .login .inner .kakao_btn p {
+  font-size: 1.8rem;
+  padding-left: 3rem;
+}
+.main .login .inner .box_btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  /* or_line */
+  /* id_password */
+  /* last_login */
+  /* or_line */
+}
+.main .login .inner .box_btn .or_line {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.main .login .inner .box_btn .or_line .hr {
+  width: 100%;
+  height: 1px;
+  border: 0;
+  background-color: #ccc;
+  margin-top: 1rem;
+}
+.main .login .inner .box_btn .or_line .text {
+  font-size: 1.4rem;
+  color: #ABABAB;
+  margin: 0 1rem;
+}
+.main .login .inner .box_btn .id_password {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  /* id_box */
+  /* password */
+  /* check_box */
+}
+.main .login .inner .box_btn .id_password .id_box {
+  width: 100%;
+}
+.main .login .inner .box_btn .id_password .id_box::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: url("../img/icon_id.png") center center/cover no-repeat;
+  position: absolute;
+  top: 10px;
+  left: 11px;
+}
+.main .login .inner .box_btn .id_password .id_box input {
+  width: 100%;
+  height: 5rem;
+  padding: 0 1rem 0 4.4rem;
+  font-size: 1.4rem;
+  color: #ccc;
+  border: 1px solid #ccc;
+}
+.main .login .inner .box_btn .id_password .password {
+  margin-top: 1rem;
+  position: relative;
+}
+.main .login .inner .box_btn .id_password .password::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: url("../img/icon_password.png") center center/cover no-repeat;
+  position: absolute;
+  top: 10px;
+  left: 11px;
+}
+.main .login .inner .box_btn .id_password .check_box {
+  width: 100%;
+}
+.main .login .inner .box_btn .id_password .check_box ul {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-start;
+}
+.main .login .inner .box_btn .id_password .check_box ul li {
+  display: flex;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #222;
+  margin-left: 0.8rem;
+  margin-right: 2rem;
+  align-items: center;
+}
+.main .login .inner .box_btn .id_password .check_box ul li input {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.7rem;
+  border-radius: 0;
+}
+.main .login .inner .box_btn .id_password .check_box ul li p {
+  padding: 5px 0;
+}
+.main .login .inner .box_btn .id_password .login_box {
+  width: 100%;
+  height: 5rem;
+  line-height: 5rem;
+  margin: 3rem 0 2rem;
+  display: flex;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: #333;
+  border: 1px solid #ccc;
+}
+.main .login .inner .box_btn .id_password .login_box:hover {
+  border: 1px solid #333;
+}
+.main .login .inner .box_btn .last_login {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.main .login .inner .box_btn .last_login ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.main .login .inner .box_btn .last_login ul li {
+  font-size: 1.6rem;
+  color: #ccc;
+  padding: 0 1.6rem;
+  border-right: 1px solid #ccc;
+}
+.main .login .inner .box_btn .last_login ul li:first-child {
+  padding-left: 0;
+}
+.main .login .inner .box_btn .last_login ul li:last-child {
+  padding: 0;
+  border-right: 0;
+  margin-top: 1rem;
+}
+.main .login .inner .box_btn .or_line {
+  margin-top: 1rem;
+}
+.main .login .inner .box_btn .btn_icon {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.main .login .inner .box_btn .btn_icon a {
+  width: 46px;
+  height: 46px;
+  margin-right: 8px;
+}
+.main .login .inner .box_btn .btn_icon a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* main *//*# sourceMappingURL=login.css.map */

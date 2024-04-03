@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kakao</title>
+    <link rel="stylesheet" href="css/kakao.css">
+    <link rel="stylesheet" href="css/kakao.scss">
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script src="lib/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.1/kakao.min.js" integrity="sha384-kDljxUXHaJ9xAb2AzRd59KxjrFjzHa5TAoFQ6GbYTCAG0bjM55XohjjDT7tDDC01" crossorigin="anonymous"></script>
+    <script>
+        Kakao.init('c089c8172def97eb00c07217cae17495'); // 사용하려는 앱의 JavaScript 키 입력
+    </script>
+
+    <script>
+        function loginWithKakao() {
+            Kakao.Auth.authorize({
+            redirectUri: 'https://developers.kakao.com/tool/demo/oauth',
+            });
+        }
+
+        // 아래는 데모를 위한 UI 코드입니다.
+        displayToken()
+        function displayToken() {
+            var token = getCookie('authorize-access-token');
+
+            if(token) {
+            Kakao.Auth.setAccessToken(token);
+            Kakao.Auth.getStatusInfo()
+                .then(function(res) {
+                if (res.status === 'connected') {
+                    document.getElementById('token-result').innerText
+                    = 'login success, token: ' + Kakao.Auth.getAccessToken();
+                }
+                })
+                .catch(function(err) {
+                Kakao.Auth.setAccessToken(null);
+                });
+            }
+        }
+
+        function getCookie(name) {
+            var parts = document.cookie.split(name + '=');
+            if (parts.length === 2) { return parts[1].split(';')[0]; }
+        }
+        
+    </script>
+</head>
+<body>
+    <div class="main">
+        <div class="login">
+            <div class="inner">
+                <div class="kakao_btn">
+                    <button class="kakao" >
+                        <a href="javascript:loginWithKakao()">카카오로 1초만에 시작하기</a>
+                    </button><!-- kakao -->
+                </div><!-- kakao_btn -->
+            </div><!-- inner -->
+        </div><!-- login -->
+    </div><!-- main -->
+</body>
+</html>

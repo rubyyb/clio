@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+
+<body>
+    <button onclick="openView()">팝업 열기</button>
+    <script>
+   
+        function openView() {
+            var popupW = 450;
+            var popupH = 650;
+            var left = Math.round((window.screen.width/2) - (popupW/2));
+            var top = Math.ceil((window.screen.height - popupH) / 2);
+            window.open('https://accounts.kakao.com/login/?continue=https%3A%2F%2Fkauth.kakao.com%2Foauth%2Fauthorize%3Fresponse_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fclubclio.co.kr%252Fcontroller%252Fmember%252Fkakao%252Flogin%26state%3D310647093%26through_account%3Dtrue%26client_id%3D26730907262e50424e561eacc6262936#login', '', 'width=' + popupW + ',height=' + popupH + ',left=0' + ',top=' + top + ',scrollbars=yes,resizable=no,toolbar=no,titlebar=no,menubar=no,location=no')
+            console.log(left)
+            console.log(top)
+        }
+        //[출처] javascript 팝업(새창) 열기 window.open + 팝업창 위치 가운데로하기 | 작성자 수우미양가
+ 
+    </script>
+</body>
+
+</html>

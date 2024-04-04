@@ -1,4 +1,11 @@
 $(function(){
+    // 링크방지
+    $('a').click(function(e){
+        if($(this).attr("href") == "#") {
+            e.preventDefault();
+        }
+    })
+
     //고객센터와 top버튼 나타나기
     $(window).scroll(function(){
         if ($(this).scrollTop() > 500){
@@ -16,7 +23,6 @@ $(function(){
     let menu = document.getElementsByClassName('pc_gnb')[0];
     let menuAfter = document.getElementsByClassName('header_menu')[0];
 
-    // 얘는 스크롤할 때마다 실행되는 이벤트 리스너야
     window.addEventListener('scroll', () => {
         let scrollBar = window.scrollY;
         if(menuAfter.classList.contains('on')) return;
@@ -89,7 +95,7 @@ $(function(){
         })
     }
 
-    //메인비주얼 슬라이드
+        //메인비주얼 슬라이드
         var swiper = new Swiper(".main_visual_slide", {
             navigation: {
                 nextEl: ".swiper-button-next",

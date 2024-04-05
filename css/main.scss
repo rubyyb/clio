@@ -248,7 +248,7 @@
                 }
             }/* left_item */
 
-            .pc {
+            .right_item {
                 width: 48%;
                 height: 38.16vw;
                 overflow: hidden;
@@ -258,7 +258,6 @@
                 position: relative;
                 .swiper {
                     position: static;
-                    width: 100%;
                     .swiper-wrapper {
                         gap: 24px;
                         .swiper-slide {

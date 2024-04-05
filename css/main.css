@@ -264,7 +264,7 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
-.main .new .new_list .pc {
+.main .new .new_list .right_item {
   width: 48%;
   height: 38.16vw;
   overflow: hidden;
@@ -273,71 +273,70 @@
   gap: 24px;
   position: relative;
 }
-.main .new .new_list .pc .swiper {
+.main .new .new_list .right_item .swiper {
   position: static;
-  width: 100%;
   /* swiper-wrapper */
 }
-.main .new .new_list .pc .swiper .swiper-wrapper {
+.main .new .new_list .right_item .swiper .swiper-wrapper {
   gap: 24px;
   /* swiper-slide */
 }
-.main .new .new_list .pc .swiper .swiper-wrapper .swiper-slide {
+.main .new .new_list .right_item .swiper .swiper-wrapper .swiper-slide {
   height: 7.4vw;
   display: flex;
   gap: 24px;
   /* new_text_box */
 }
-.main .new .new_list .pc .swiper .swiper-wrapper .swiper-slide figure {
+.main .new .new_list .right_item .swiper .swiper-wrapper .swiper-slide figure {
   width: 11.27vw;
   height: 7.47vw;
 }
-.main .new .new_list .pc .swiper .swiper-wrapper .swiper-slide figure img {
+.main .new .new_list .right_item .swiper .swiper-wrapper .swiper-slide figure img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.main .new .new_list .pc .swiper .swiper-wrapper .swiper-slide .new_text_box {
+.main .new .new_list .right_item .swiper .swiper-wrapper .swiper-slide .new_text_box {
   width: 100%;
   display: flex;
   justify-content: space-between;
   /* new_text */
 }
-.main .new .new_list .pc .swiper .swiper-wrapper .swiper-slide .new_text_box .new_text {
+.main .new .new_list .right_item .swiper .swiper-wrapper .swiper-slide .new_text_box .new_text {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   /* new_pay */
 }
-.main .new .new_list .pc .swiper .swiper-wrapper .swiper-slide .new_text_box .new_text p {
+.main .new .new_list .right_item .swiper .swiper-wrapper .swiper-slide .new_text_box .new_text p {
   font-size: 1.2rem;
   color: #7B7474;
 }
-.main .new .new_list .pc .swiper .swiper-wrapper .swiper-slide .new_text_box .new_text h4 {
+.main .new .new_list .right_item .swiper .swiper-wrapper .swiper-slide .new_text_box .new_text h4 {
   font-size: 1.6rem;
   color: #333;
   font-weight: bold;
   margin-top: 2.5rem;
 }
-.main .new .new_list .pc .swiper .swiper-wrapper .swiper-slide .new_text_box .new_text .new_pay {
+.main .new .new_list .right_item .swiper .swiper-wrapper .swiper-slide .new_text_box .new_text .new_pay {
   display: flex;
   gap: 1rem;
 }
-.main .new .new_list .pc .swiper .swiper-wrapper .swiper-slide .new_text_box .new_text .new_pay h5 {
+.main .new .new_list .right_item .swiper .swiper-wrapper .swiper-slide .new_text_box .new_text .new_pay h5 {
   color: red;
   font-size: 1.6rem;
   font-weight: bold;
 }
-.main .new .new_list .pc .swiper .swiper-wrapper .swiper-slide .new_text_box .new_text .new_pay p {
+.main .new .new_list .right_item .swiper .swiper-wrapper .swiper-slide .new_text_box .new_text .new_pay p {
   font-size: 1.6rem;
   font-weight: bold;
   color: #333;
 }
-.main .new .new_list .pc .swiper .swiper-wrapper .swiper-slide .new_text_box .new_icon button {
+.main .new .new_list .right_item .swiper .swiper-wrapper .swiper-slide .new_text_box .new_icon button {
   width: 3.5rem;
 }
-.main .new .new_list .pc .swiper .swiper-wrapper .swiper-slide .new_text_box .new_icon button img {
+.main .new .new_list .right_item .swiper .swiper-wrapper .swiper-slide .new_text_box .new_icon button img {
   width: 100%;
 }
 .main .text_slide_2 {

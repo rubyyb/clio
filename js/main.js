@@ -6,6 +6,19 @@ $(function(){
         }
     })
 
+        //popup 
+        let popupBtn = $('.popup > button');
+        let popupBg = $('.popup_bg');
+        popupBtn.click(function(){
+            $('.popup').css({
+                'display' : 'none',
+            })
+            popupBg.css({
+                'display' : 'none'
+            })
+        });
+
+
     //고객센터와 top버튼 나타나기
     $(window).scroll(function(){
         if ($(this).scrollTop() > 500){

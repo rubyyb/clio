@@ -800,6 +800,9 @@
   .main .best .inner .best_list .swiper .swiper-wrapper .swiper-slide .text div {
     font-size: 1.2rem;
   }
+  .main .best .inner .best_list .swiper .swiper-wrapper .swiper-slide .text div p {
+    font-size: 1.2rem;
+  }
   .main .new {
     padding: 7rem 0;
   }

@@ -727,7 +727,12 @@
                         overflow: hidden;
                     }
                     p {font-size: 1rem;}
-                    div {font-size: 1.2rem;}
+                    div {
+                        font-size: 1.2rem;
+                        p {
+                            font-size: 1.2rem;
+                        }
+                    }
                 }
             }
         }
